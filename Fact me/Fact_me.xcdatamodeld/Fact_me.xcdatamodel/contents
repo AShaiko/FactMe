@@ -4,15 +4,17 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name_en" optional="YES" attributeType="String"/>
         <attribute name="name_ru" optional="YES" attributeType="String"/>
+        <relationship name="facts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fact" inverseName="category" inverseEntity="Fact"/>
     </entity>
     <entity name="Fact" representedClassName="Fact" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="text_en" optional="YES" attributeType="String"/>
         <attribute name="text_ru" optional="YES" attributeType="String"/>
         <attribute name="wasReaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="facts" inverseEntity="Category"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-63" positionY="-18" width="128" height="74"/>
-        <element name="Fact" positionX="-54" positionY="18" width="128" height="89"/>
+        <element name="Category" positionX="-192.620361328125" positionY="6.9488525390625" width="92.337158203125" height="103"/>
+        <element name="Fact" positionX="115.4449462890625" positionY="-7.1766357421875" width="128" height="118"/>
     </elements>
 </model>
