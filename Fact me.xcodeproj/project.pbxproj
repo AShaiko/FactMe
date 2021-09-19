@@ -16,6 +16,10 @@
 		AF5CFC2626F75E5A00797D48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CFC2426F75E5A00797D48 /* LaunchScreen.storyboard */; };
 		AF5CFC3126F75E5A00797D48 /* Fact_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC3026F75E5A00797D48 /* Fact_meTests.swift */; };
 		AF5CFC3C26F75E5A00797D48 /* Fact_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC3B26F75E5A00797D48 /* Fact_meUITests.swift */; };
+		AF5CFC4D26F796A200797D48 /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC4926F796A200797D48 /* Fact+CoreDataClass.swift */; };
+		AF5CFC4E26F796A200797D48 /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC4A26F796A200797D48 /* Fact+CoreDataProperties.swift */; };
+		AF5CFC4F26F796A200797D48 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC4B26F796A200797D48 /* Category+CoreDataClass.swift */; };
+		AF5CFC5026F796A200797D48 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CFC4C26F796A200797D48 /* Category+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		AF5CFC3726F75E5A00797D48 /* Fact meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fact meUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5CFC3B26F75E5A00797D48 /* Fact_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact_meUITests.swift; sourceTree = "<group>"; };
 		AF5CFC3D26F75E5B00797D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5CFC4926F796A200797D48 /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AF5CFC4A26F796A200797D48 /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AF5CFC4B26F796A200797D48 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AF5CFC4C26F796A200797D48 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		AF5CFC1526F75E5700797D48 /* Fact me */ = {
 			isa = PBXGroup;
 			children = (
+				AF5CFC5126F7974100797D48 /* Models */,
 				AF5CFC1626F75E5700797D48 /* AppDelegate.swift */,
 				AF5CFC1826F75E5700797D48 /* SceneDelegate.swift */,
 				AF5CFC1A26F75E5700797D48 /* ViewController.swift */,
@@ -129,6 +138,17 @@
 				AF5CFC3D26F75E5B00797D48 /* Info.plist */,
 			);
 			path = "Fact meUITests";
+			sourceTree = "<group>";
+		};
+		AF5CFC5126F7974100797D48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF5CFC4926F796A200797D48 /* Fact+CoreDataClass.swift */,
+				AF5CFC4A26F796A200797D48 /* Fact+CoreDataProperties.swift */,
+				AF5CFC4B26F796A200797D48 /* Category+CoreDataClass.swift */,
+				AF5CFC4C26F796A200797D48 /* Category+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5CFC4D26F796A200797D48 /* Fact+CoreDataClass.swift in Sources */,
 				AF5CFC1B26F75E5700797D48 /* ViewController.swift in Sources */,
+				AF5CFC4F26F796A200797D48 /* Category+CoreDataClass.swift in Sources */,
 				AF5CFC1726F75E5700797D48 /* AppDelegate.swift in Sources */,
+				AF5CFC4E26F796A200797D48 /* Fact+CoreDataProperties.swift in Sources */,
 				AF5CFC1926F75E5700797D48 /* SceneDelegate.swift in Sources */,
 				AF5CFC2126F75E5700797D48 /* Fact_me.xcdatamodeld in Sources */,
+				AF5CFC5026F796A200797D48 /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

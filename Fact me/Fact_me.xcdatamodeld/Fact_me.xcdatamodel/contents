@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name_en" optional="YES" attributeType="String"/>
+        <attribute name="name_ru" optional="YES" attributeType="String"/>
+        <relationship name="facts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fact" inverseName="category" inverseEntity="Fact"/>
+    </entity>
+    <entity name="Fact" representedClassName="Fact" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="text_en" optional="YES" attributeType="String"/>
+        <attribute name="text_ru" optional="YES" attributeType="String"/>
+        <attribute name="wasReaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="facts" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-192.620361328125" positionY="6.9488525390625" width="92.337158203125" height="103"/>
+        <element name="Fact" positionX="115.4449462890625" positionY="-7.1766357421875" width="128" height="118"/>
+    </elements>
 </model>
